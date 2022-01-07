@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Output" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="40dp"
+        android:text="0 °C"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp
+        "
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/cloud_1" />
+
+       <ImageView
+           android:id="@+id/imageView2"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_alignLeft="@+id/imageView1"
+           android:layout_below="@+id/imageView1"
+           android:layout_marginTop="28dp"
+           android:src="@drawable/location" />
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_alignLeft="@+id/imageView2"
+           android:layout_below="@+id/imageView2"
+           android:layout_marginTop="20dp"
+           android:src="@drawable/humidity" />
+
+       <ImageView
+           android:id="@+id/imageView5"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_alignLeft="@+id/imageView3"
+           android:layout_below="@+id/imageView3"
+           android:layout_marginTop="16dp"
+           android:src="@drawable/wind" />
+
+       <ImageView
+           android:id="@+id/imageView4"
+           android:layout_width="30sp"
+           android:layout_height="30sp"
+           android:layout_alignLeft="@+id/imageView5"
+           android:layout_below="@+id/imageView5"
+           android:layout_marginTop="16dp"
+           android:src="@drawable/pressure" />
+
+       <TextView
+           android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/imageView4"
+           android:layout_alignLeft="@+id/textView4"
+           android:text="-"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/imageView5"
+           android:layout_alignLeft="@+id/textView2"
+           android:layout_alignRight="@+id/textView2"
+           android:text="-"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/imageView3"
+           android:layout_alignParentRight="true"
+           android:layout_toRightOf="@+id/tvResult"
+           android:text="-"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/tvResult"
+           android:layout_width="wrap_content"
+           android:layout_height="80sp"
+           android:layout_alignLeft="@+id/imageView4"
+           android:layout_below="@+id/imageView4"
+           android:text="Unknown"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#000000" />
+
+       <TextView
+           android:id="@+id/textView4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/imageView4"
+           android:layout_alignLeft="@+id/textView3"
+           android:text="-"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="200sp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tvResult"
+           android:layout_centerHorizontal="true"
+           android:background="#0070c7"
+           android:text="Go Back"
+           android:onClick="goback"
+           android:textColor="@android:color/white" />
+
+</RelativeLayout>
